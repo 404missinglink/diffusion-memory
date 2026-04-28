@@ -1,0 +1,18 @@
+{
+  "run_id": "diffusion-memory-longmemeval-5QLL1A0D",
+  "status": "completed",
+  "config_fingerprint": "f2a3580e2e334d7abe88446f8c893ce93f948d5b74e3b4890d2bd0f3276febbf",
+  "agents": [
+    "diffusion-memory"
+  ],
+  "datasets": [
+    "longmemeval-oracle"
+  ],
+  "total_cases": 500,
+  "active_cases": 500,
+  "original_total_cases": 500,
+  "completed_cases": 500,
+  "start_time": "2026-04-28T12:38:42.071422+00:00",
+  "completed_time": "2026-04-28T13:55:12.545693+00:00",
+  "system_error_count": 0
+}

@@ -1,0 +1,24 @@
+[project]
+name = "diffusion-memory"
+version = "0.1.0"
+description = "Graph diffusion token memory experiments and Pacabench agents"
+requires-python = ">=3.12"
+dependencies = [
+    "datasets>=2.0.0",
+    "matplotlib>=3.0.0",
+    "numpy>=1.26.0",
+    "openai>=1.0.0",
+    "pydantic>=2.0.0",
+    "scikit-learn>=1.0.0",
+    "scipy>=1.11.0",
+    "tiktoken>=0.7.0",
+]
+
+[dependency-groups]
+dev = [
+    "pacabench>=0.0.2",
+    "pytest>=8.0.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]

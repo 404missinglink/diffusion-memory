@@ -38,6 +38,34 @@ If amnesia is reached, you will see:
 Total amnesia reached at timestep: <N>
 ```
 
+## Pacabench LongMemEval
+
+This repo includes a Pacabench agent that uses diffusion-memory retrieval to
+select relevant LongMemEval conversation turns, then answers with an
+OpenAI-compatible chat model.
+
+```bash
+uv sync --dev
+export OPENAI_API_KEY=...
+uv run pacabench run --limit 1 --no-tui
+```
+
+For a fuller run:
+
+```bash
+uv run pacabench run --no-tui
+```
+
+The agent defaults to `gpt-5-nano`. You can override the model and retrieval
+budget through environment variables:
+
+```bash
+OPENAI_MODEL=gpt-4o-mini \
+DIFFUSION_CONTEXT_MESSAGES=32 \
+DIFFUSION_CONTEXT_CHARS=32000 \
+uv run pacabench run --limit 10 --no-tui
+```
+
 ## TODO
 
 - adding feature extractors (over just token level) 
